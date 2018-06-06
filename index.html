@@ -2,14 +2,19 @@
 
 <html lang="en">
 <head>
+  <!--<script src="mysecurescheme://test.com/TestAlertScript.js"></script> -->
+  <script>
+  function locallyLoadedAlert() {
+    document.body.style.backgroundColor = "red"
+  }
+  </script>
   <meta charset="utf-8">
 
   <title>Scheme Handlers</title>
   <meta name="description" content="Test Page">
 </head>
 
-<body>
-  <script src="mysecurescheme://test.com/TestAlertScript.js"></script>
+<body onload="locallyLoadedAlert()">
   <img src="mysecurescheme://test.com/localTestImage.png" alt="Local Test Image" height="50" width="50"></img>
 </body>
 </html>
